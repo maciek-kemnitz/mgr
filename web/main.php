@@ -26,6 +26,8 @@ $main->get('/', function(\Symfony\Component\HttpFoundation\Request $request) use
 //    $session->remove("oauth_token");
 //    die;
 
+	return $app['twig']->render('main.twig');
+
     if ($session->has('state'))
     {
         $state = $session->get('state');
