@@ -1,0 +1,14 @@
+body {
+    background-color: #5bc0de;
+}
+
+.main {
+    margin-top: 30px;
+    background-color: #f7f7f7;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+}
+

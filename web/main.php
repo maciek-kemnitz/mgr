@@ -2,70 +2,85 @@
 
 include __DIR__.'/../vendor/dropbox-php/dropbox-php/src/Dropbox/autoload.php';
 
+const DROPBOX_STATE = 'dropbox_state';
+const DROPBOX_STATE_STARTED = 1;
+const DROPBOX_STATE_FINISHED = 4;
 
 $main = $app['controllers_factory'];
 
 
-
-
-
-
-$main->get('/', function(\Symfony\Component\HttpFoundation\Request $request) use ($app) {
-
+$main->get('/', function(\Symfony\Component\HttpFoundation\Request $request) use ($app)
+{
     $consumerKey = 'w2iwfqgcatz12y7';
     $consumerSecret = 'oig0ca9xtwplre5';
-
-    $oauth = new Dropbox_OAuth_PHP($consumerKey, $consumerSecret);
-
-    $dropbox = new Dropbox_API($oauth);
 
     /** @var \Symfony\Component\HttpFoundation\Session\Session $session  */
     $session = $app['session'];
 
-//    $session->set("state", 1);
-//    $session->remove("oauth_token");
-//    die;
+    $oauth = new Dropbox_OAuth_PHP($consumerKey, $consumerSecret);
+    $dropbox = new Dropbox_API($oauth);
 
-	return $app['twig']->render('main.twig');
-
-    if ($session->has('state'))
+    if ($session->has(DROPBOX_STATE))
     {
-        $state = $session->get('state');
+        $dropboxState = $session->get(DROPBOX_STATE);
     }
     else
     {
-        $state = 1;
+        $dropboxState = DROPBOX_STATE_STARTED;
     }
 
-    switch($state)
+    $dropboxLoginUrl = null;
+    $dropboxNotDone = true;
+
+    switch($dropboxState)
     {
         case 1:
-
             $tokens = $oauth->getRequestToken();
-            $session->set("state", 2);
-            $session->set("oauth_tokens", $tokens);
+            $session->set(DROPBOX_STATE, 2);
+            $session->set("dropbox_oauth_tokens", $tokens);
 
-            return new \Symfony\Component\HttpFoundation\RedirectResponse($oauth->getAuthorizeUrl("http://localhost/mgr-project/web/index.php/"));
-
-        case 2:
-            echo "Step 3: Acquiring access tokens<br>";
-            $oauth->setToken($session->get('oauth_tokens'));
-            $tokens = $oauth->getAccessToken();
-            var_dump($tokens);
-            $session->set('state', 3);
-            $session->set('oauth_tokens', $tokens);
-
-        case 3 :
-            echo "The user is authenticated<br>";
-            echo "You should really save the oauth tokens somewhere, so the first steps will no longer be needed<br>";
-            print_r($session->get('oauth_tokens'));
-            $oauth->setToken($session->get('oauth_tokens'));
-            var_dump($dropbox->getAccountInfo());
+            $dropboxLoginUrl = $oauth->getAuthorizeUrl("http://localhost/mgr/web/index.php/");
             break;
 
+        case 2:
+            $oauth->setToken($session->get('dropbox_oauth_tokens'));
+            try
+            {
+                $tokens = $oauth->getAccessToken();
+                $session->set(DROPBOX_STATE, 3);
+                $session->set('dropbox_oauth_tokens', $tokens);
+            }
+            catch(Exception $exc)
+            {
+                $session->set(DROPBOX_STATE, 1);
+                return \Symfony\Component\HttpFoundation\RedirectResponse::create($request->getUri());
+            }
+
+        case 3 :
+            $oauth->setToken($session->get('dropbox_oauth_tokens'));
+            $dropboxNotDone = false;
+            break;
     }
 
-    return $app['twig']->render('main.twig');
+    $key = 'a1976ec6c3d8989a07f7ae75271da0d40045cf8d';
+    $secret = '8a72b1c0819528c4919b2ab5e80c3b0fb1ef812d';
+
+    $oauth2 = new OAuth($key, $secret, OAUTH_SIG_METHOD_HMACSHA1,OAUTH_AUTH_TYPE_URI);
+    $oauth2->disableSSLChecks();
+    $oauth2->enableDebug();
+    $basecampRedirectUrl = "http://localhost/mgr/web/index.php/";
+    $basecampLoginUrl = "https://launchpad.37signals.com/authorization/new?type=web_server&client_id={$key}&redirect_uri={$basecampRedirectUrl}";
+    $basecampNotDone = true;
+
+	return $app['twig']->render('main.twig', array(
+        'dropboxLoginUrl' => $dropboxLoginUrl,
+        'dropboxNotDone' => $dropboxNotDone,
+        'basecampLoginUrl' => $basecampLoginUrl,
+        'basecampNotDone' => $basecampNotDone,
+    ));
+
+
 });
 
 return $main;
+

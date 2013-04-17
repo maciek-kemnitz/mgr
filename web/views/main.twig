@@ -3,7 +3,7 @@
 {% block main %}
     <div id="dropbox" class="row">
         <div class="span3 logo">
-            <a href="google.com"><img src="./../img/dropbox.png" alt="Połącz z dropbox" ></a>
+            <a {% if dropboxNotDone  %}href="{{ dropboxLoginUrl }}" {% endif %}><img src="./../img/dropbox.png" alt="Połącz z dropbox" ></a>
         </div>
         <div class="span9">
             tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
@@ -12,7 +12,7 @@
     </div>
     <div id="basecamp" class="row">
         <div class="span3 ">
-            <a href="google.com"><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
+            <a {% if basecampNotDone  %}href="{{ basecampLoginUrl }}" {% endif %}><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
         </div>
         <div class="span9">
             tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
