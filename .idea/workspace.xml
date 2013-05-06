@@ -2,68 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc5c53d1-f886-456b-9257-72935dccc9dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/httpclient.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/php-oauth-api.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/http.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/test_cookies.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/test_http.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/test_http_cookies.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/test_http_image_request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/test_http_post.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/test_http_soap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/yahoo_export_address_book.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/yahoo_group_invite.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/httpclient/yahoo_user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/database_oauth_client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_bitbucket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_box.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_dropbox.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_eventful.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_facebook.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_fitbit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_flickr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_google.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_instagram.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_linkedin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_microsoft.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_rightsignature.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_scoopit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_stocktwits.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_tumblr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_twitter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_xing.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/login_with_yahoo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/mysqli_login_with_google.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/mysqli_oauth_client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/mysqli_offline_access_to_google.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/oauth.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/oauth_client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/oauth_client_class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oauth/test_oauth_client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/DropboxLogin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/config/db.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/config/dropbox.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/loginBasecamp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/loginDropbox.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/mainBatch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mgr-project.iml" afterPath="$PROJECT_DIR$/.idea/mgr-project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/basecamp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/dropbox.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/main.php" afterPath="$PROJECT_DIR$/web/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/main.twig" afterPath="$PROJECT_DIR$/web/views/main.twig" />
     </list>
     <ignored path="mgr-project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/main.twig" changelist="cc5c53d1-f886-456b-9257-72935dccc9dc" time="1366132818044" ignored="false" />
-    <file path="/layout.twig" changelist="cc5c53d1-f886-456b-9257-72935dccc9dc" time="1366132669321" ignored="false" />
-    <file path="/main.php" changelist="cc5c53d1-f886-456b-9257-72935dccc9dc" time="1366132135058" ignored="false" />
     <file path="/index.php" changelist="cc5c53d1-f886-456b-9257-72935dccc9dc" time="1366131423551" ignored="false" />
+    <file path="/main.php" changelist="cc5c53d1-f886-456b-9257-72935dccc9dc" time="1366132135058" ignored="false" />
+    <file path="/layout.twig" changelist="cc5c53d1-f886-456b-9257-72935dccc9dc" time="1366132669321" ignored="false" />
+    <file path="/main.twig" changelist="cc5c53d1-f886-456b-9257-72935dccc9dc" time="1366132818044" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +34,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="468" selection-end="478" vertical-scroll-proportion="-9.807693">
+            <state line="15" column="20" selection-start="468" selection-end="478" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,11 +43,8 @@
       <file leaf-file-name="loginDropbox.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/loginDropbox.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="1966" selection-end="1966" vertical-scroll-proportion="-36.615383">
-              <folding>
-                <element signature="e#640#807#0" expanded="false" />
-                <element signature="e#744#807#0" expanded="false" />
-              </folding>
+            <state line="60" column="0" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,25 +61,25 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="45" selection-start="380" selection-end="401" vertical-scroll-proportion="-9.807693">
+            <state line="15" column="45" selection-start="380" selection-end="401" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginBasecamp.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="loginBasecamp.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/loginBasecamp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="71" selection-start="333" selection-end="513" vertical-scroll-proportion="-4.6666665">
+            <state line="21" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.02014218">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainBatch.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mainBatch.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/mainBatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="0" selection-start="2791" selection-end="2791" vertical-scroll-proportion="0.556872">
+            <state line="82" column="0" selection-start="2791" selection-end="2791" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,13 +88,8 @@
       <file leaf-file-name="oauth_client.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oauth/oauth_client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1162" column="0" selection-start="37103" selection-end="37103" vertical-scroll-proportion="-2.627451">
-              <folding>
-                <element signature="e#32052#35696#0" expanded="false" />
-                <element signature="e#32377#34007#0" expanded="false" />
-                <element signature="e#34166#35024#0" expanded="false" />
-                <element signature="e#50801#50947#0" expanded="false" />
-              </folding>
+            <state line="1162" column="0" selection-start="37103" selection-end="37103" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,7 +97,7 @@
       <file leaf-file-name="main.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/main.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="71" selection-start="672" selection-end="672" vertical-scroll-proportion="-9.153846">
+            <state line="14" column="71" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -237,7 +177,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,22 +209,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgr-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oauth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +272,11 @@
       <created>1366229553961</created>
       <updated>1366229553961</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dropbox login done, bc login started">
+      <created>1367791612049</created>
+      <updated>1367791612049</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -357,7 +287,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18569905" sideWeight="0.33407822" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15368196" sideWeight="0.65810055" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15528281" sideWeight="0.65810055" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -426,15 +356,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/silex/silex/src/Silex/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="503" column="41" selection-start="16833" selection-end="16903" vertical-scroll-proportion="0.6078199">
-          <folding />
-        </state>
+        <state line="503" column="41" selection-start="16833" selection-end="16903" vertical-scroll-proportion="0.6078199" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/DropboxLogin.php">
@@ -458,9 +386,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="43" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="43" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/dropbox-php/dropbox-php/src/Dropbox/OAuth.php">
@@ -470,80 +396,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/dropbox-php/dropbox-php/src/Dropbox/OAuth/PHP.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="41" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="39" column="41" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/main.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="71" selection-start="672" selection-end="672" vertical-scroll-proportion="-9.153846">
+        <state line="14" column="71" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/dropbox-php/dropbox-php/src/Dropbox/API.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="20" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.3429603">
-          <folding />
-        </state>
+        <state line="70" column="20" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.3429603" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/loginDropbox.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1966" selection-end="1966" vertical-scroll-proportion="-36.615383">
-          <folding>
-            <element signature="e#640#807#0" expanded="false" />
-            <element signature="e#744#807#0" expanded="false" />
-          </folding>
+        <state line="60" column="0" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="468" selection-end="478" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/loginBasecamp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="71" selection-start="333" selection-end="513" vertical-scroll-proportion="-4.6666665">
+        <state line="15" column="20" selection-start="468" selection-end="478" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="45" selection-start="380" selection-end="401" vertical-scroll-proportion="-9.807693">
+        <state line="15" column="45" selection-start="380" selection-end="401" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/httpclient/http.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1275" column="12" selection-start="40165" selection-end="40165" vertical-scroll-proportion="-1.2154031">
-          <folding>
-            <element signature="e#37278#38642#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="1275" column="12" selection-start="40165" selection-end="40165" vertical-scroll-proportion="-1.2154031" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oauth/oauth_client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1162" column="0" selection-start="37103" selection-end="37103" vertical-scroll-proportion="-2.627451">
-          <folding>
-            <element signature="e#32052#35696#0" expanded="false" />
-            <element signature="e#32377#34007#0" expanded="false" />
-            <element signature="e#34166#35024#0" expanded="false" />
-            <element signature="e#50801#50947#0" expanded="false" />
-          </folding>
+        <state line="1162" column="0" selection-start="37103" selection-end="37103" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/mainBatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2791" selection-end="2791" vertical-scroll-proportion="0.556872">
+        <state line="82" column="0" selection-start="2791" selection-end="2791" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/loginBasecamp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.02014218">
           <folding />
         </state>
       </provider>
