@@ -1,7 +1,9 @@
 <?php
 
 require_once __DIR__.'/../vendor/autoload.php';
-
+require_once __DIR__.'/helper/DropboxHelper.php';
+require_once __DIR__.'/helper/BasecampHelper.php';
+require_once __DIR__.'/helper/DBHelper.php';
 
 
 $app = new Silex\Application();

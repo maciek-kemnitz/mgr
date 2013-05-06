@@ -1,24 +1,17 @@
 <?php
 
-include __DIR__.'/../vendor/dropbox-php/dropbox-php/src/Dropbox/autoload.php';
-
 const DROPBOX_STATE = 'dropbox_state';
 const DROPBOX_STATE_STARTED = 1;
-const DROPBOX_STATE_FINISHED = 4;
 
 $loginDropbox = $app['controllers_factory'];
 
 
 $loginDropbox->get('/', function(\Symfony\Component\HttpFoundation\Request $request) use ($app)
 {
-    $consumerKey = 'w2iwfqgcatz12y7';
-    $consumerSecret = 'oig0ca9xtwplre5';
+    $dropboxHelper = new DropboxHelper();
 
     /** @var \Symfony\Component\HttpFoundation\Session\Session $session  */
     $session = $app['session'];
-
-    $oauth = new Dropbox_OAuth_PHP($consumerKey, $consumerSecret);
-    $dropbox = new Dropbox_API($oauth);
 
     if ($session->has(DROPBOX_STATE))
     {
@@ -30,25 +23,24 @@ $loginDropbox->get('/', function(\Symfony\Component\HttpFoundation\Request $requ
     }
 
     $dropboxLoginUrl = null;
-    $dropboxNotDone = true;
 
     switch($dropboxState)
     {
         case 1:
-            $tokens = $oauth->getRequestToken();
+            $tokens = $dropboxHelper->oauth->getRequestToken();
             $session->set(DROPBOX_STATE, 2);
             $session->set("dropbox_oauth_tokens", $tokens);
 
-            $dropboxLoginUrl = $oauth->getAuthorizeUrl($request->getUri());
+            $dropboxLoginUrl = $dropboxHelper->oauth->getAuthorizeUrl($request->getUri());
             return $app->redirect($dropboxLoginUrl);
 
         case 2:
-            $oauth->setToken($session->get('dropbox_oauth_tokens'));
+            $dropboxHelper->oauth->setToken($session->get('dropbox_oauth_tokens'));
             try
             {
-                $tokens = $oauth->getAccessToken();
+                $tokens = $dropboxHelper->oauth->getAccessToken();
 
-                $accountInfo = $dropbox->getAccountInfo();
+                $accountInfo = $dropboxHelper->dropbox->getAccountInfo();
 
                 $stmt = $app['db']->prepare("INSERT IGNORE INTO user_dropbox (id, access_token, display_name) VALUES(:id, :access_token, :display_name)");
                 $stmt->bindValue('access_token', json_encode($tokens));
@@ -63,14 +55,9 @@ $loginDropbox->get('/', function(\Symfony\Component\HttpFoundation\Request $requ
             }
             catch(Exception $exc)
             {
-                var_dump($exc);exit;
                 $session->set(DROPBOX_STATE, 1);
                 return \Symfony\Component\HttpFoundation\RedirectResponse::create($request->getUri());
             }
-
-        case 3 :
-            $oauth->setToken($session->get('dropbox_oauth_tokens'));
-            return $app->redirect($app['url_generator']->generate('main'));
     }
 
 })->bind('login-dropbox');
