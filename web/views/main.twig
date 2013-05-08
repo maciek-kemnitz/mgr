@@ -1,34 +1,49 @@
 {% extends 'layout.twig' %}
 
 {% block main %}
-    <div id="dropbox" class="row">
-        <div class="span3 logo">
-            <a {% if dropboxLogin is defined  %}href="{{ dropboxLogin }}" {% else %}} class="disabled" {% endif %}><img src="./../img/dropbox.png" alt="Połącz z dropbox" ></a>
-        </div>
-        <div class="span9">
-            tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-            blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
-        </div>
-    </div>
-    <div id="basecamp" class="row">
-        <div class="span3 ">
-            <a {% if basecampLogin is defined  %}href="{{ basecampLogin }}" {% else %} class="disabled" {% endif %}><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
-        </div>
-        <div class="span9">
-            tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-            blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
-        </div>
-    </div>
-    <div id="configuration" class="row">
-        <div class="span3 logo">
-            <a href="google.com"><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
-        </div>
-        <div class="span9">
-            tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-            blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
-        </div>
-    </div>
-
-
-
+	<div id="header">
+		<img src="./../img/dropbox.png">
+		<img src="./../img/dropbox.png">
+		<img src="./../img/dropbox.png">
+	</div>
+	<div class="well border-blue">
+		<div>
+			dropcamp.pl
+		</div>
+		<div id="agenda" class="row">
+			<div class="border-blue pull-left">
+				<img src="./../img/dropbox.png"> Połącz swoje konto dropbox
+			</div>
+			<div class="border-blue">
+				<img src="./../img/dropbox.png"> Połącz swoje konto basecamp
+			</div>
+		</div>
+		<div id="dropbox" class="row">
+			<div class="span3 logo">
+				<a {% if dropboxLogin is defined  %}href="{{ dropboxLogin }}" {% else %}} class="disabled" {% endif %}><img src="./../img/dropbox.png" alt="Połącz z dropbox" ></a>
+			</div>
+			<div class="span9">
+				tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
+				blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
+			</div>
+		</div>
+		<div id="basecamp" class="row">
+			<div class="span3 ">
+				<a {% if basecampLogin is defined  %}href="{{ basecampLogin }}" {% else %} class="disabled" {% endif %}><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
+			</div>
+			<div class="span9">
+				tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
+				blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
+			</div>
+		</div>
+		<div id="configuration" class="row">
+			<div class="span3 logo">
+				<a href="google.com"><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
+			</div>
+			<div class="span9">
+				tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
+				blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
+			</div>
+		</div>
+	</div>
 {% endblock %}

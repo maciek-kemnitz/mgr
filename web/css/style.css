@@ -1,10 +1,9 @@
 body {
-    background-color: #5bc0de;
+    background-color: #808080;
 }
 
 .main {
     margin-top: 30px;
-    background-color: #f7f7f7;
 }
 
 .logo {
@@ -12,3 +11,30 @@ body {
     height: 160px;
 }
 
+#header {
+	margin: auto;
+	width: 309px;
+}
+
+#header img {
+	width: 100px;
+	height: 100px;
+}
+
+.border-blue {
+	border: 1px;
+	border-color: deepskyblue;
+	border-style: solid;
+}
+
+.main .well {
+	background-color: #ffffff;
+}
+
+#agenda img {
+	width: 20px;
+	height: 20px;
+}
+
+
+/*gradientn od f8-ff*/
