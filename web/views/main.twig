@@ -2,48 +2,60 @@
 
 {% block main %}
 	<div id="header">
-		<img src="./../img/dropbox.png">
-		<img src="./../img/dropbox.png">
-		<img src="./../img/dropbox.png">
+		<img src="./../img/header.png">
 	</div>
 	<div class="well border-blue">
-		<div>
+		<div id="logo" class="padding-frame">
 			dropcamp.pl
 		</div>
-		<div id="agenda" class="row">
-			<div class="border-blue pull-left">
-				<img src="./../img/dropbox.png"> Połącz swoje konto dropbox
+		<div id="agenda">
+			<div id="point-1" class="border-blue pull-left">
+                <div>
+				    <h5><img src="./../img/dropbox.png"> Połącz swoje konto dropbox</h5>
+                </div>
 			</div>
-			<div class="border-blue">
-				<img src="./../img/dropbox.png"> Połącz swoje konto basecamp
-			</div>
-		</div>
-		<div id="dropbox" class="row">
-			<div class="span3 logo">
-				<a {% if dropboxLogin is defined  %}href="{{ dropboxLogin }}" {% else %}} class="disabled" {% endif %}><img src="./../img/dropbox.png" alt="Połącz z dropbox" ></a>
-			</div>
-			<div class="span9">
-				tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-				blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
+			<div id="point-2" class="border-blue pull-right points">
+                <div>
+                    <h5><img src="./../img/dropbox.png"> Połącz swoje konto basecamp</h5>
+                </div>
 			</div>
 		</div>
-		<div id="basecamp" class="row">
-			<div class="span3 ">
-				<a {% if basecampLogin is defined  %}href="{{ basecampLogin }}" {% else %} class="disabled" {% endif %}><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
-			</div>
-			<div class="span9">
-				tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-				blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
-			</div>
-		</div>
-		<div id="configuration" class="row">
-			<div class="span3 logo">
-				<a href="google.com"><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
-			</div>
-			<div class="span9">
-				tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-				blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
-			</div>
-		</div>
+        <div class=" padding-frame">
+            <div class="row">
+                <div class="span4">
+                    lala
+                </div>
+                <div class="span7">
+                    lala
+                </div>
+            </div>
+            <div id="dropbox" class="row">
+                <div class="span3 logo">
+                    <a {% if dropboxLogin is defined  %}href="{{ dropboxLogin }}" {% else %}} class="disabled" {% endif %}><img src="./../img/dropbox.png" alt="Połącz z dropbox" ></a>
+                </div>
+                <div class="span9">
+                    tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
+                    blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
+                </div>
+            </div>
+            <div id="basecamp" class="row">
+                <div class="span3 ">
+                    <a {% if basecampLogin is defined  %}href="{{ basecampLogin }}" {% else %} class="disabled" {% endif %}><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
+                </div>
+                <div class="span9">
+                    tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
+                    blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
+                </div>
+            </div>
+            <div id="configuration" class="row">
+                <div class="span3 logo">
+                    <a href="google.com"><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
+                </div>
+                <div class="span9">
+                    tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
+                    blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
+                </div>
+            </div>
+        </div>
 	</div>
 {% endblock %}
