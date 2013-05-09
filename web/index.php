@@ -23,7 +23,9 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), include 'config/db.
 
 
 $app->mount('/', include 'main.php');
-$app->mount('/b', include 'b.php');
+$app->mount('/step-1', include 'dropbox.php');
+//$app->mount('/step-2', include 'basecamp.twig');
+//$app->mount('/b', include 'b.php');
 $app->mount('/login-basecamp', include 'loginBasecamp.php');
 $app->mount('/login-dropbox', include 'loginDropbox.php');
 $app->run();

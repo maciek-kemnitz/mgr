@@ -11,64 +11,67 @@
 		<div id="agenda">
 			<div id="point-1" class="border-blue pull-left">
                 <div>
-				    <h5><img src="./../img/point-1.png"> Połącz swoje konto dropbox</h5>
+                    {% if dropboxLogin is defined %}
+                        <h5><img src="./../img/point-1.jpg"> Połącz swoje konto dropbox</h5>
+                    {% else %}
+                        <h5><img src="./../img/tick.jpg"> Połącz swoje konto dropbox</h5>
+                    {% endif %}
                 </div>
 			</div>
 			<div id="point-2" class="border-blue pull-right points">
                 <div>
-                    <h5><img src="./../img/point-1.png"> Połącz swoje konto basecamp</h5>
+                    {% if dropboxLogin is defined %}
+                        <h5><img src="./../img/point-2-muted.jpg"> Połącz swoje konto basecamp</h5>
+                    {% elseif basecampLogin is defined %}
+                        <h5><img src="./../img/point-2.jpg"> Połącz swoje konto basecamp</h5>
+                    {% else %}
+                        <h5><img src="./../img/tick.jpg"> Połącz swoje konto basecamp</h5>
+                    {% endif %}
                 </div>
 			</div>
 		</div>
         <div class="padding-frame">
             <div class="row">
+                {% if (dropboxLogin is defined) or (basecampLogin is defined) %}
                 <div class="span4 login">
-                    <h4>Połącz swoje konto dropbox</h4>
+                    {% if dropboxLogin is defined %}
+                        <h4>Połącz swoje konto dropbox</h4>
 
-					<p class="muted">Teraz zaloguj się do dropbox żebyśmy</p>
+                        <p class="muted">Teraz zaloguj się do dropbox żebyśmy</p>
 
-					<p class="muted">mogli przesłać tam twoje pliki z basecamp</p>
+                        <p class="muted">mogli przesłać tam twoje pliki z basecamp</p>
 
-					<button type="button" class="btn btn-primary">Zaloguj się do dropbox</button>
+                        <a href="{{ dropboxLogin }}" type="button" class="btn btn-primary">Zaloguj się do dropbox</a>
+                    {% elseif basecampLogin is defined %}
+                        <h4>Wszystkie twoje pliki z basecamp</h4>
 
-					<h4>Wszystkie twoje pliki z basecamp</h4>
+                        <p class="muted">Uporządkowane według projektów na</p>
 
-					<p class="muted">Uporządkowane według projektów na</p>
+                        <p class="muted">na twoim tysku dropbox</p>
 
-					<p class="muted">na twoim tysku dropbox</p>
-
-					<button type="button" class="btn btn-success">Zaloguj się do basecamp</button>
+                        <a href="{{ basecampLogin }}" type="button" class="btn btn-success">Zaloguj się do basecamp</a>
+                    {% else %}
+                        <h5><img src="./../img/tick.jpg"> Połącz swoje konto basecamp</h5>
+                    {% endif %}
                 </div>
-                <div class="span7">
-                    <img src="./../img/screen-dropbox.jpg">
+                <div class="span7" style="position: relative">
+                    <img src="./../img/web.png">
+                    {% if dropboxLogin is defined %}
+                        <img class="in-web-pic" src="./../img/dropbox-web.jpg">
+                    {% else %}
+                        <img class="in-web-pic" src="./../img/basecamp-web.jpg">
+                    {% endif %}
                 </div>
-            </div>
-            <div id="dropbox" class="row">
-                <div class="span3 logo">
-                    <a {% if dropboxLogin is defined  %}href="{{ dropboxLogin }}" {% else %}} class="disabled" {% endif %}><img src="./../img/dropbox.png" alt="Połącz z dropbox" ></a>
-                </div>
-                <div class="span9">
-                    tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-                    blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
-                </div>
-            </div>
-            <div id="basecamp" class="row">
-                <div class="span3 ">
-                    <a {% if basecampLogin is defined  %}href="{{ basecampLogin }}" {% else %} class="disabled" {% endif %}><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
-                </div>
-                <div class="span9">
-                    tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-                    blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
-                </div>
-            </div>
-            <div id="configuration" class="row">
-                <div class="span3 logo">
-                    <a href="google.com"><img src="./../img/basecamp.png" alt="Połącz z basecamp" ></a>
-                </div>
-                <div class="span9">
-                    tu będzie sobie siedział tekst o dropbox i jak zajebiscie sie jest z nim połączyć oraz dlaczego to w ogóle robimy
-                    blav sdlksdlfmd vdsksdlvsd dslfsdfl,sd
-                </div>
+                {% else %}
+                    <div id="splash">
+                        <img src="./../img/loga_finish.png">
+                        <div id="spalsh-text">
+                            <h1>Wszystko gotowe</h1>
+                            <p class="muted">Twoje pliki z projektów z basecamp są teraz automatycznie synchronizowane z</p>
+                            <p class="muted">dropbox. Dla każdego z projektów stworzyliśmy oddzielny folder.</p>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         </div>
 	</div>

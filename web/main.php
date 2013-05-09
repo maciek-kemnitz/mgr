@@ -16,7 +16,7 @@ $main->get('/', function(\Symfony\Component\HttpFoundation\Request $request) use
         return $app['twig']->render('main.twig', array('basecampLogin' => $app['url_generator']->generate('login-basecamp')));
     }
 
-    //return $app['twig']->render('main.twig');
+    return $app['twig']->render('main.twig');
     return include 'mainBatch.php';
 
 })->bind('main');

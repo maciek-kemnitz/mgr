@@ -48,7 +48,7 @@ body {
 
 #point-1 div {
     margin: auto;
-    width: 240px;
+    width: 250px;
 }
 
 #point-2 {
@@ -58,7 +58,7 @@ body {
 
 #point-2 div {
     margin: auto;
-    width: 255px;
+    width: 270px;
 }
 
 .padding-frame {
@@ -74,4 +74,27 @@ body {
 	font-weight: bold;
 }
 
-/*gradientn od f8-ff*/
+.in-web-pic {
+    position: absolute;
+    top: 43px;
+    width: 400px;
+    height: 324px;
+    left: 90px;
+}
+
+#splash {
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+#spalsh-text {
+    position: absolute;
+    top: 30px;
+    left: 230px;
+}
+
+#spalsh-text h1 {
+    font-size: 52px;
+}
+

@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc5c53d1-f886-456b-9257-72935dccc9dc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/basecamp-web.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/dropbox-web.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/loga_finish.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/point-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/point-2-muted.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/point-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/tick.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/web.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/web.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/dropbox.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/views/dropbox.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/main.php" afterPath="$PROJECT_DIR$/web/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/main.twig" afterPath="$PROJECT_DIR$/web/views/main.twig" />
     </list>
     <ignored path="mgr-project.iws" />
@@ -34,25 +47,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="32" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="11" selection-start="602" selection-end="602" vertical-scroll-proportion="-12.423077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasecampHelper.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/helper/BasecampHelper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="37" selection-start="2650" selection-end="2667" vertical-scroll-proportion="0.0">
+            <state line="24" column="34" selection-start="779" selection-end="788" vertical-scroll-proportion="-15.692307">
               <folding />
             </state>
           </provider>
@@ -61,16 +56,46 @@
       <file leaf-file-name="mainBatch.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/mainBatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="21" selection-start="2455" selection-end="2455" vertical-scroll-proportion="-23.307692">
+            <state line="73" column="21" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="24" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+            <state line="61" column="1" selection-start="786" selection-end="786" vertical-scroll-proportion="0.25747126">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginDropbox.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/loginDropbox.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="16" selection-start="1771" selection-end="1834" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/main.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="44" selection-start="3191" selection-end="3191" vertical-scroll-proportion="-31.153847">
+              <folding>
+                <element signature="tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#div#1" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dropbox.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/dropbox.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="25" selection-start="273" selection-end="273" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -85,32 +110,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DropboxHelper.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/helper/DropboxHelper.php">
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="105" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
+            <state line="18" column="4" selection-start="547" selection-end="588" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginDropbox.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/loginDropbox.php">
+      <file leaf-file-name="dropbox.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/dropbox.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="-0.65384614">
+            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/views/main.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="39" selection-start="98" selection-end="98" vertical-scroll-proportion="0.123861566">
-              <folding>
-                <element signature="tag#div#0;tag#div#1" expanded="false" />
-                <element signature="tag#div#1;tag#div#1" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -128,22 +141,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/config/dropbox.json" />
-        <option value="$PROJECT_DIR$/vendor/dropbox-php/dropbox-php/src/Dropbox/OAuth/PHP.php" />
-        <option value="$PROJECT_DIR$/oauth/oauth_client.php" />
         <option value="$PROJECT_DIR$/web/DropboxHelper.php" />
         <option value="$PROJECT_DIR$/web/helper/Helper/DropboxHelper.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/web/loginDropbox.php" />
         <option value="$PROJECT_DIR$/web/loginBasecamp.php" />
-        <option value="$PROJECT_DIR$/web/main.php" />
         <option value="$PROJECT_DIR$/web/helper/BasecampHelper.php" />
         <option value="$PROJECT_DIR$/web/helper/DropboxHelper.php" />
-        <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/helper/DBHelper.php" />
         <option value="$PROJECT_DIR$/web/mainBatch.php" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/views/dropbox.twig" />
+        <option value="C:/Windows/System32/drivers/etc/hosts" />
+        <option value="$PROJECT_DIR$/web/index.php" />
+        <option value="$PROJECT_DIR$/web/dropbox.php" />
+        <option value="$PROJECT_DIR$/web/main.php" />
         <option value="$PROJECT_DIR$/web/views/main.twig" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
       </list>
     </option>
   </component>
@@ -244,6 +257,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mgr-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="helper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -287,112 +318,6 @@
       <recent name="E:\Programy\xampp\htdocs\mgr\web\helper\Helper" />
       <recent name="E:\Programy\xampp\htdocs\mgr-project\web" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/web/css/style.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/web/views/main.twig</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -449,28 +374,32 @@
       <created>1367876929203</created>
       <updated>1367876929203</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="little more front">
+      <created>1368047991023</created>
+      <updated>1368047991023</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18569905" sideWeight="0.33407822" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11099253" sideWeight="0.6703911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17716116" sideWeight="0.6703911" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -511,7 +440,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="backend fin for now on local" />
+    <option name="LAST_COMMIT_MESSAGE" value="little more front" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -528,6 +457,7 @@
     <MESSAGE value="dropbox login done, bc login started" />
     <MESSAGE value="missing pics" />
     <MESSAGE value="backend fin for now on local" />
+    <MESSAGE value="little more front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,21 +465,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/oauth/oauth_client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1162" column="0" selection-start="37103" selection-end="37103" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="9" selection-start="3605" selection-end="3605" vertical-scroll-proportion="0.34360188" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/dropbox-php/dropbox-php/src/Dropbox/API.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="25" selection-start="3012" selection-end="3023" vertical-scroll-proportion="0.6293622" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -572,23 +487,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/helper/BasecampHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="37" selection-start="2650" selection-end="2667" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="90" column="37" selection-start="2650" selection-end="2667" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/helper/DropboxHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="105" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="39" column="105" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/helper/DBHelper.php">
@@ -600,39 +504,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/mainBatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="21" selection-start="2455" selection-end="2455" vertical-scroll-proportion="-23.307692">
+        <state line="73" column="21" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/loginDropbox.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="-0.65384614">
+        <state line="53" column="16" selection-start="1771" selection-end="1834" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Windows/System32/drivers/etc/hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="24" selection-start="845" selection-end="845" vertical-scroll-proportion="0.42988506" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dropbox.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="34" selection-start="779" selection-end="788" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/dropbox.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="273" selection-end="273" vertical-scroll-proportion="-6.5384617">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="11" selection-start="602" selection-end="602" vertical-scroll-proportion="-12.423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="24" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+        <state line="18" column="4" selection-start="547" selection-end="588" vertical-scroll-proportion="-11.769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/main.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="39" selection-start="98" selection-end="98" vertical-scroll-proportion="0.123861566">
+        <state line="70" column="44" selection-start="3191" selection-end="3191" vertical-scroll-proportion="-31.153847">
           <folding>
+            <element signature="tag#div#0" expanded="false" />
             <element signature="tag#div#0;tag#div#1" expanded="false" />
-            <element signature="tag#div#1;tag#div#1" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="1" selection-start="786" selection-end="786" vertical-scroll-proportion="0.25747126">
+          <folding />
         </state>
       </provider>
     </entry>
