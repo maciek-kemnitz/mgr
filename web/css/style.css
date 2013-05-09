@@ -36,10 +36,10 @@ body {
     margin-bottom: 80px;
 }
 
-#agenda img {
-	width: 20px;
-	height: 20px;
-}
+/*#agenda img {*/
+	/*width: 20px;*/
+	/*height: 20px;*/
+/*}*/
 
 #point-1 {
     margin-left: -1px;
@@ -48,7 +48,7 @@ body {
 
 #point-1 div {
     margin: auto;
-    width: 225px;
+    width: 240px;
 }
 
 #point-2 {
@@ -58,11 +58,20 @@ body {
 
 #point-2 div {
     margin: auto;
-    width: 235px;
+    width: 255px;
 }
 
 .padding-frame {
     padding: 20px;
+}
+
+.login {
+	text-align: center;
+}
+
+.login button {
+	font-size: 21px;
+	font-weight: bold;
 }
 
 /*gradientn od f8-ff*/
